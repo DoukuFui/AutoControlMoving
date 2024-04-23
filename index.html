@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+    <style>
+        .frame {
+            width: 600px;
+            height: 80px;
+            background-color: lightskyblue;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 400px;
+            left: 700px;
+        }
+        .customButton {
+            width: 120px;
+            height: 50px;
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="game">
+    <img id="hero" width="200" height="200" src="pikachu.png" style="top: 0px; left: 0px; position: absolute; transition: transform 0.5s ease">
+    <div class="frame">
+        <button class="customButton" id="toggleButton" onclick="toggleMoving()">Dừng</button>
+        <button class="customButton" onclick="controlMoving(2)">Trái</button>
+        <button class="customButton" onclick="controlMoving(0)">Phải</button>
+        <button class="customButton" onclick="controlMoving(3)">Lên</button>
+        <button class="customButton" onclick="controlMoving(1)">Xuống</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
